@@ -1,0 +1,16 @@
+{
+	"name": "Lucifer for redirect host",
+	"version": "0.5",
+	"manifest_version": 2,
+	"description": "Lucifer procedure",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"background": {
+    	"persistent": false,
+		"scripts": ["background.js"]
+	},
+	"permissions": ["webRequest", "webRequestBlocking", "storage", "file:///*", "http://*/*"]
+}

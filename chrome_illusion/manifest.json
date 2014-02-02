@@ -1,0 +1,17 @@
+{
+	"name": "Lucifer for redirect host illusion",
+	"version": "0.8",
+	"manifest_version": 2,
+	"description": "Lucifer procedure",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"content_scripts": [{
+		"run_at": "document_end",
+		"matches": ["file:///*"],
+		"js": ["lucifer_redirect_host.js"]
+	}],
+	"permissions": ["file:///*"]
+}
